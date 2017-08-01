@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>表格（table）设计总结 | 阿切是个巨人</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="做了几套后台的网页设计，踩了好多坑，有时被团队质疑，甚至被自己质疑。也参照了ant－design、material design、element－ui，做了一些自己的规范。接下来用markdown总结一部分内容，给自己一个总结，希望可以指正。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="表格（table）设计总结">
+<meta property="og:url" content="http://yoursite.com/2017/08/01/table-web/index.html">
+<meta property="og:site_name" content="阿切是个巨人">
+<meta property="og:description" content="做了几套后台的网页设计，踩了好多坑，有时被团队质疑，甚至被自己质疑。也参照了ant－design、material design、element－ui，做了一些自己的规范。接下来用markdown总结一部分内容，给自己一个总结，希望可以指正。">
+<meta property="og:updated_time" content="2017-08-01T11:01:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="表格（table）设计总结">
+<meta name="twitter:description" content="做了几套后台的网页设计，踩了好多坑，有时被团队质疑，甚至被自己质疑。也参照了ant－design、material design、element－ui，做了一些自己的规范。接下来用markdown总结一部分内容，给自己一个总结，希望可以指正。">
+  
+    <link rel="alternative" href="/atom.xml" title="阿切是个巨人" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">阿切是个巨人</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/Me">Me</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-table-web" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2017/08/01/table-web/" class="article-date">
+  <time datetime="2017-08-01T10:48:26.000Z" itemprop="datePublished">2017-08-01</time>
+</a>
+		</span>
+		<span class="meta-elements author">阿切</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      表格（table）设计总结
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>做了几套后台的网页设计，踩了好多坑，有时被团队质疑，甚至被自己质疑。也参照了ant－design、material design、element－ui，做了一些自己的规范。接下来用markdown总结一部分内容，给自己一个总结，希望可以指正。</p>
+<a id="more"></a>
+<h1 id="一-对齐（align）"><a href="#一-对齐（align）" class="headerlink" title="一.对齐（align）"></a>一.对齐（align）</h1><h3 id="左对齐"><a href="#左对齐" class="headerlink" title="左对齐"></a>左对齐</h3><p><strong>大部分文字</strong>    比如业务编号、名字、公司名称等大部分比较长不确定性的内容。因为它符合了人们大部分的阅读习惯。</p>
+<h3 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h3><p> <strong>长度固定不变的内容</strong> 比如时间、身份证号等。其中也有部分人会把改内容归位左对齐</p>
+<h3 id="右对齐"><a href="#右对齐" class="headerlink" title="右对齐"></a>右对齐</h3><p><strong>数字及小数点之后有固定小数</strong> 因为大多数用户习惯“个十百千万的顺序”，方便上下对比数据</p>
+<h1 id="二-文字（font）"><a href="#二-文字（font）" class="headerlink" title="二.文字（font）"></a>二.文字（font）</h1><h3 id="内容长度"><a href="#内容长度" class="headerlink" title="内容长度"></a>内容长度</h3><p>在设置表头的文字要尽量精简，不要让表头的文字占据大量的空间，会严重缩短表格要呈现的内容，尽量控制在4个字左右；表格内部文字也要精简可以适当带着省略号，当鼠标移上去展示全部</p>
+<h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><p>文字大小尽量控制在12、13px，14px放在表格里偏大</p>
+<h3 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h3><p>文字要简洁干净。不需要衬线字体，不要加粗也不要斜体</p>
+<h1 id="三-修饰（decorate）"><a href="#三-修饰（decorate）" class="headerlink" title="三.修饰（decorate）"></a>三.修饰（decorate）</h1><h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>在绘制表格时会或多或少加上分割线，分割线的作用：分开数据不一样的信息。1）当我们在用到水平分割线时，会更加强调行，当然我们在权衡要不要使用分割线时会有些纠结。根据格式塔原则，我们要适当把不同的信息进行分类，把同类信息放在一起或更靠近。所以大多数情况下水平分割线都存在，但是线的颜色不能太深，会抢走数据的重要性；2）我们是否要用垂直分割线？如果数据更具有独立性可以加上，这里更强调每列之间的不一样。我个人还是建议去掉垂直分割线，来突出数据本身</p>
+<h3 id="每行的背景"><a href="#每行的背景" class="headerlink" title="每行的背景"></a>每行的背景</h3><p>这里的背景提及的是斑马纹，斑马纹的作用：让用户在读大量数据时不会感觉疲劳，但是在上下数据对比或者会和鼠标移上去会有些不一样。所以这里还是少用</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>其他一些大家会觉在视觉上酷炫的效果：投影、3d效果等尽量舍去不要来干扰数据</p>
+<h1 id="四-配色（color）"><a href="#四-配色（color）" class="headerlink" title="四.配色（color）"></a>四.配色（color）</h1><p>线条的配色：＃eeeeee；</p>
+<p>表头的颜色：主色调降低透明度</p>
+<p>网站的主色调：对比度要高。根据网页可读指导原则（Web Content Accessibility Guidelines ，WCAG）将对比度分成了三个等级分别为A、AA、AAA。网页中可读文字至少要达到AA级别，即4.5：1，最佳的对比度要达到7：1。<br>这里有关于网页设计色盲的解决办法<a href="http://www.uisdc.com/5-ways-design-for-colorblind-users" target="_blank" rel="external">网页色盲配色的结局办法参考</a></p>
+<h1 id="五-状态（status）"><a href="#五-状态（status）" class="headerlink" title="五.状态（status）"></a>五.状态（status）</h1><p>我们会遇到这些状态列表：交易中、交易成功、交易失败等，会有很多列表的状态是一样。因为这些内容大量重复，我们很难看出它们的不同，所以需要我们进行可视化（前面加一个状态颜色的小点），让每个状态不一样，并且能够轻易看出它们的不一样。</p>
+<h1 id="六-操作（antion）"><a href="#六-操作（antion）" class="headerlink" title="六.操作（antion）"></a>六.操作（antion）</h1><h3 id="表内操作"><a href="#表内操作" class="headerlink" title="表内操作"></a>表内操作</h3><h4 id="1-查看详情"><a href="#1-查看详情" class="headerlink" title="1.查看详情"></a>1.查看详情</h4><p>我们在查看详情操作会有两种情况：第一种是在表格里有一个查看详情的按钮；第二种是点击业务编号的链接进入下一个页面</p>
+<h4 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h4><p>这里有三种情况：第一种是直接编辑，在点击表格内“编辑”文字来显示输入框的形式；第二种是浮窗编辑，在鼠标移上文字会出现浮窗可以在浮窗进行编辑修改；第三种是弹窗编辑，通过一个修改按钮弹出一个弹窗进行修改。这里个人建议直接修改，会更加直接。</p>
+<h1 id="八-分页（pagination）"><a href="#八-分页（pagination）" class="headerlink" title="八.分页（pagination）"></a>八.分页（pagination）</h1><p>分页的主要作用是当内容开始多起来，节省一定空间并缓解用户的压力。构成元素：上一页、下一页、页数、跳转到某页（确定按钮）。这里有些组合：1.上一页、数字、下一页 2.上一页、数字、下一页、总共多少页 3.上一页、数字、下一页、总共多少页、跳转到、确定按钮。</p>
+<p>问自己几个问题：1）页面数量多少合适？在开始量比较少的时候，表格的分页器尽量限制在1-4页左右。2）查看最多的是哪几个页面？根据大部分的行为习惯说明，用户习惯把点击首页。3）手动翻完页面的概率有多大？4）mouserover的情况怎么显示？可以采用颜色显示。5）用户会不按照页面顺序点击么？ 6）用户会不会翻以前翻过的页面？7）翻页是否应该出现在顶部？什么时候出现在顶部？我们可以看到邮箱和淘宝的宝贝列表会出现，当内容太多，用户想要找的内容在下一页可以不用看内容直接进行跳转。8）是否显示最后一页？在内容太多，用户浏览得不耐烦时，希望尽快完成浏览任务的情况下。</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/17/web01/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          发现实用网站（一）
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">阿切是个巨人</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2017 阿切<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
